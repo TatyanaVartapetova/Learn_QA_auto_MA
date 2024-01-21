@@ -1,11 +1,14 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import static jdk.nashorn.internal.objects.NativeString.toLowerCase;
+
 public class MainClassTest extends MainClass
 {
     @Test
-public void testGetClassNumber(){
-        int actual = getClassNumber();
-        Assert.assertTrue("number <= 45",actual>45);
-    }
-}
+public void testGetClassString(){
+        String actual = getClassString();
+        Assert.assertTrue("no Hello or hello in this string", actual.toLowerCase().contains("hello"));
+
+    }}
+

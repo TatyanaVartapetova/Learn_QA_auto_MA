@@ -1,8 +1,10 @@
-public class MainClass{
-    private int class_number = 20;
+import org.junit.Assert;
 
-    public int getClassNumber() {
-        return class_number;
+public class MainClass{
+    private String class_string = "hello, world";
+    public String getClassString() {
+        return class_string;
     }
+
 }
 
